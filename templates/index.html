@@ -1,0 +1,17 @@
+<h1>Hello World!</h1>
+<h2>Pretty cool eh, yup</h2>
+
+<p>Webpage Life Right!!!</p>
+<p>By the way my name is {{first_name}}</p>
+<p>{{text | trim}}</p>
+
+<h3>Here's the grocery list:</h3>
+
+{% for item in grocery_list %}
+    {% if item == 10 %}
+        {{ item + 100}}<br/>
+    {% else %}
+        {{item}}<br/>
+    {%endif%}
+{% endfor %}
+
